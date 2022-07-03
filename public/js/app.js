@@ -26,7 +26,6 @@ messageThree.textContent=''
 messageFour.textContent=''
 
 // fetch('http://localhost:3000/weather?address=' + location).then((response)=>{we
-// 1223
 fetch('/weather?address=' + location).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
