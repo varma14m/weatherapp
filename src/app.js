@@ -3,6 +3,7 @@ const express=require('express')
 const hbs=require('hbs')
 const geocode=require('./utils/geocode')
 const forecast=require('./utils/forecast')
+const port= process.env.port || 3000
 
 
 
@@ -113,7 +114,7 @@ res.render('404',{
 })
 })
 
-app.listen(3000,()=>{
-    console.log('server is up to 3000.')
+app.listen(port,()=>{
+    console.log('server is up on port.'+ port)
 })
 
